@@ -1,4 +1,4 @@
-⚖️🤖 Code\&Clause: AI Assistant for Nigerian Tech Laws & Policies 🇳🇬
+# ⚖️🤖 Code\&Clause: AI Assistant for Nigerian Tech Laws & Policies 🇳🇬
 
 ## 🧠 Overview
 
