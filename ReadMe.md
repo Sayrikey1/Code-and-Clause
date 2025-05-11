@@ -74,7 +74,7 @@
 Type or speak your question about Nigerian tech policies.
 
 📤 **Upload Documents**:
-Submit PDFs and Images to get summaries and insights.
+Submit PDFs to get summaries and insights.
 
 📜 **Review History**:
 View your past chats and uploads.
@@ -115,7 +115,7 @@ All documents and policy data are directly scraped and updated from the [NITDA](
 
 ## 📄 License
 
-Licensed under the **Apache 2.0 License**.
+Licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) (SPDX: Apache-2.0).
 See `LICENSE` for more info.
 
 ---
