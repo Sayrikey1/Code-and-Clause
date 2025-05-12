@@ -98,11 +98,12 @@ View your past chats and uploads.
 
 Here's a glimpse of what you'll see when using Code\&Clause:
 
-| 📷 Chat Interface        | 📑 Document Upload       | 📊 Summary View          |
-| ------------------------ | ------------------------ | ------------------------ |
-| *(Add screenshots here)* | *(Add screenshots here)* | *(Add screenshots here)* |
-
-> 🖼️ *To add images, simply place them in a folder (e.g., `/images`) and link them with markdown like `![Chatbot Screenshot](images/chat.png)`.*
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+  <img src="./images/Screenshot1.png" alt="Frontend Screenshot 1" style="width:100%;" />
+  <img src="./images/Screenshot2.png" alt="Frontend Screenshot 2" style="width:100%;" />
+  <img src="./images/Screenshot3.png" alt="Frontend Screenshot 3" style="width:100%;" />
+  <img src="./images/Screenshot4.png" alt="Frontend Screenshot 3" style="width:100%;" />
+</div>
 
 ## 📡 Data Source
 
