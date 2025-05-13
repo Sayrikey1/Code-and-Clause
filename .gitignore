@@ -1,5 +1,6 @@
 codeclause
 app.log
+frontend/app_old.py
 .env
 cached_models
 __pycache__/

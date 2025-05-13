@@ -73,22 +73,36 @@ def login():
         else:
             st.error(resp.json().get("detail", "Login failed."))
 
+
 def profile():
-    st.subheader("👤 Profile")
+    st.subheader("📋 User Profile")
     token = st.session_state.get("token")
     if not token:
-        st.warning("Login to view profile.")
+        st.warning("⚠️ Please log in first.")
         return
+    
     headers = {"Authorization": f"Bearer {token}"}
-    resp = requests.get(f"{BASE_URL}/auth/user/me", headers=headers)
-    if resp.status_code == 200:
-        user = resp.json()
-        st.markdown(f"**Name:** {user['first_name']} {user['last_name']}")
-        st.markdown(f"**Email:** {user['email']}")
-        st.markdown(f"**Active:** {user['is_active']}")
-        st.markdown(f"**Verified:** {user['is_verified']}")
+    response = requests.get(f"{BASE_URL}/auth/user/me", headers=headers)
+    if response.status_code == 200:
+        user_data = response.json()
+        
+        # Display user profile in a clean format
+        st.markdown("### 🧑‍💻 User Information")
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown(f"**First Name:** {user_data.get('first_name', 'N/A')}")
+            st.markdown(f"**Last Name:** {user_data.get('last_name', 'N/A')}")
+            st.markdown(f"**Email:** {user_data.get('email', 'N/A')}")
+        
+        with col2:
+            st.markdown(f"**Account Status:** {'Active ✅' if user_data.get('is_active') else 'Inactive ❌'}")
+            st.markdown(f"**Superuser:** {'Yes 👑' if user_data.get('is_superuser') else 'No'}")
+            st.markdown(f"**Verified:** {'Yes ✔️' if user_data.get('is_verified') else 'No ❌'}")
+        
+        st.success("✅ Profile loaded successfully!")
     else:
-        st.error("Failed to load profile.")
+        st.error(response.json().get("detail", "Failed to fetch user details ❌"))
 
 class AudioProcessor(AudioProcessorBase):
     def __init__(self):
