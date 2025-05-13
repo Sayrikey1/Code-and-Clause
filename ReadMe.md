@@ -105,6 +105,10 @@ Here's a glimpse of what you'll see when using Code\&Clause:
   <img src="./images/Screenshot4.png" alt="Frontend Screenshot 3" style="width:100%;" />
 </div>
 
+## 🎥 Video Demo
+
+[▶️ Watch the demo video](https://drive.google.com/file/d/1Snh_OLaBUiuBsOuAgsjB6D_cQXxf-46u/view?usp=sharing)
+
 ## 📡 Data Source
 
 All documents and policy data are directly scraped and updated from the [NITDA](https://nitda.gov.ng/) website.
